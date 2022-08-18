@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>TicTacToe играть онлайн</title>
+  <link rel="stylesheet" href="ticTacToe.css"/>
+  <script src="TicTacToe.js"></script>
+ </head>
+ <body>
+  <h1>TicTacToe - крестики нолики</h1>
+  <!-- Комментарий -->
+<h2> описания игры </h2>
+<div id="descriptions">
+<p>это одна из самых старых и <b>популярных игр.</b></p>
+<p>здэсь вы сможете <b>играть как онлайн</b> так и с ботом.</p>
+<p>ето обычыные кркстики нолики <b>с полем 3 на 3.</b></p>
+<p>тут вы сможете <b>научитьтся с ботом и пото игратэ с игроками.</b></p>
+<p>приятной игры:).</p>
+</div>
+<h2>игровоe поле</h2>
+<div id="play" onclick="startGame()">Играть.<br>Нажимай.</div>
+<div id="movediv">Ходит: <span id="movespan">X</span></div>
+<div id="field">
+<div class="cell br bb cr" id="0" onclick="button(this)">x</div>
+<div class="cell br bb" id="1" onclick="button(this)">o</div>
+<div class="cell bb cr" id="2" onclick="button(this)">x</div>
+<div class="cell br bb" id="3" onclick="button(this)">o</div>
+<div class="cell br bb cr" id="4" onclick="button(this)">x</div>
+<div class="cell bb" id="5" onclick="button(this)">o</div>
+<div class="cell br cr" id="6" onclick="button(this)">x</div>
+<div class="cell br" id="7" onclick="button(this)">o</div>
+<div class="cell cr" id="8" onclick="button(this)">x</div>
+</div>
+ </body>
+</html>
