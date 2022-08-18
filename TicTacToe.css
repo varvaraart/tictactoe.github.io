@@ -1,0 +1,41 @@
+h1 {font-size : 70px; color : rgb(132, 0, 255);}
+h2 {font-size : 35px; color : rgb(132, 0, 255);}
+p {font-size : 20px; color : rgb(132, 0, 255);}
+#field {font-size : 20px; color : rgb(22, 6, 247); width : 500px;}
+#descriptions {border : 2px solid;}
+.cell {
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    font: 100px Arial, Helvetica, sans-serif;
+    float : left;
+    width : calc(33% - 6px);
+    text-align : center;
+    height: 125px;
+}
+.cr {
+  color:rgb(255, 0, 0);
+}
+.br {
+    border-right : 3px solid black;
+}
+.bb {
+    border-bottom : 3px solid black;
+}
+
+#play {
+    font-size : 25px;
+    width: 500px;
+    background-color: rgb(30, 145, 2);
+    color: rgb(255, 255, 255);
+    text-align : center;
+    border-radius : 60px;
+    cursor: pointer;
+}
+
+#movediv {
+    font: 50px Arial, Helvetica, sans-serif;
+}
+
+#movespan {
+    font: 50px Arial, Helvetica, sans-serif;
+}
