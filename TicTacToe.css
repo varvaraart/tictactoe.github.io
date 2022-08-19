@@ -16,16 +16,16 @@ p {font-size : 20px; color : rgb(132, 0, 255);}
   color:rgb(255, 0, 0);
 }
 .br {
-    border-right : 3px solid black;
+    border-right : 3px solid rgb(143, 248, 255);
 }
 .bb {
-    border-bottom : 3px solid black;
+    border-bottom : 3px solid rgb(143, 248, 255);
 }
 
 #play {
     font-size : 25px;
     width: 500px;
-    background-color: rgb(30, 145, 2);
+    background-color: rgb(29, 143, 0);
     color: rgb(255, 255, 255);
     text-align : center;
     border-radius : 60px;
@@ -38,4 +38,8 @@ p {font-size : 20px; color : rgb(132, 0, 255);}
 
 #movespan {
     font: 50px Arial, Helvetica, sans-serif;
+}
+
+.fjgwefjft {
+    color: rgb(137, 255, 239);
 }

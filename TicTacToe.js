@@ -1,9 +1,7 @@
 var move="X";
-var arr = [
-    "", "", "",
-    "", "", "",
-    "", "", ""
-];
+
+var arr;
+
 var win = [
     [0,1,2],
     [3,4,5],
@@ -19,6 +17,8 @@ function button(s) {
     s.innerHTML = move;
     s.style.cursor="default"
     s.onclick="";
+    s.onmouseover="";
+    s.onmouseleave="";
     arr[s.id]=move;
      if (move=="X") {
         move="O";
@@ -33,12 +33,21 @@ function button(s) {
 }
 
 function startGame() {
+    arr = [
+        "", "", "",
+        "", "", "",
+        "", "", ""
+    ];
     move="X";
     for (let i = 0; i < 9; i++) {
         el = document.getElementById(i);
-        el.innerHTML = ""; //arr[i];
+        el.style.color="rgb(137, 255, 239)";
+        el.innerHTML = "";
         el.onclick = function() {button(this)};
-        el.style.color = "black";
+        el.onmouseover = function() {this.innerHTML=move};
+        el.onmouseleave = function() {this.innerHTML=""};
+        //el.style.color = "black";
+        el.style.backgroundColor = "white";
         el.style.cursor = "pointer";
     }
 }
@@ -53,8 +62,16 @@ function checkWinner() {
                 document.getElementById(win[i][0]).style.backgroundColor="rgb(148, 0, 206)";
                 document.getElementById(win[i][1]).style.backgroundColor="rgb(148, 0, 206)";
                 document.getElementById(win[i][2]).style.backgroundColor="rgb(148, 0, 206)";
+                for (let j = 0; i < 8; j++) {
+                    el = document.getElementById(j);
+                    el.onclick = "";
+                    el.style.cursor = "default";
                 }
+            }
         }
 
     }
+    if (!arr.includes("")) {document.getElementById("movespan").innerHTML = "Ничья";}
 }
+
+startGame();
