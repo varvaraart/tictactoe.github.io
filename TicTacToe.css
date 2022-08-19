@@ -22,7 +22,7 @@ p {font-size : 20px; color : rgb(132, 0, 255);}
     border-bottom : 3px solid rgb(143, 248, 255);
 }
 
-#play {
+.play {
     font-size : 25px;
     width: 500px;
     background-color: rgb(29, 143, 0);

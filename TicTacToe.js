@@ -1,4 +1,5 @@
 var move="X";
+var bot=false;
 
 var arr;
 
@@ -50,6 +51,7 @@ function startGame() {
         el.style.backgroundColor = "white";
         el.style.cursor = "pointer";
     }
+    if (bot) {button(document.getElementById("4"))}
 }
 
 function checkWinner() {
